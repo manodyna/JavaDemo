@@ -7,5 +7,7 @@ public class Main {
         int a =HelloWorld.addNumbers(10, 3);
         System.out.println(a);
         ControlFlow.fibonacci(10);
+        ControlFlow.runOnce();
+        ControlFlow.keeprunning();
     }
 }

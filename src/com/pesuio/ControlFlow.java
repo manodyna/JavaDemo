@@ -20,8 +20,34 @@ public class ControlFlow {
 //    execute until user enters 0;
     public static void keeprunning(){
         int in;
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter numbers, enter 0 to terminate");
+        in = scanner.nextInt();
+        System.out.println(in);
+        while (in!=0){
+            in = scanner.nextInt();
+            System.out.println(in);
+        }
+    }
 
+    //    execute until user enters 0;
+    public static void runOnce(){
+        int in;
+        Scanner scanner = new Scanner(System.in);
+        do{
+            in = scanner.nextInt();
+            System.out.println(in);
+        }while (in!=0);
+    }
+
+    public static void checkEven(int n){
+        if(n%2==0){
+            System.out.println("even no");
+        }else if(n%2==1){
+            System.out.println("odd no");
+        }else {
+            System.out.println("not a number");
+        }
     }
 
 }
